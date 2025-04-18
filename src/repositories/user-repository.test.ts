@@ -32,4 +32,10 @@ describe("User Repository", () => {
 
         expect(createdUser).toHaveProperty('id')
     })
+
+    it("should be able to return all users", () => {
+        const users = usersRepositry.index()
+
+        expect(users).toHaveLength(2)
+    })
 })
