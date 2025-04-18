@@ -43,7 +43,7 @@ describe("User Repository", () => {
         const user = usersRepositry.findById(2)
 
         expect(user).toHaveProperty('id')
-        expect(user.name).toEqual('Lucas')
+        expect(user.name).toEqual('Pedro')
         expect(user.id).toEqual(2)
     })
 })
