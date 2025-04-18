@@ -1,12 +1,12 @@
-type UserProps = {
-    id?: string
+export type UserProps = {
+    id?: number
     name: string
     email: string
     password: string
 }
 
 export class User{
-    private id?: string
+    public id?: number
     public name: string
     public email: string
     public password: string
