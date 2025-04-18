@@ -38,4 +38,12 @@ describe("User Repository", () => {
 
         expect(users).toHaveLength(2)
     })
+
+    it('Should be able to return a user by id', () =>{
+        const user = usersRepositry.findById(2)
+
+        expect(user).toHaveProperty('id')
+        expect(user.name).toEqual('Lucas')
+        expect(user.id).toEqual(2)
+    })
 })
